@@ -207,13 +207,81 @@ section{
 }
 .tab-contents ul li span{
    color:var(--main-color);
-   font-size: 14px;
+   font-size: 15px;
+   position: relative;
+}
+.tab-contents ul li span.c2{
+    top: 10px;
+    line-height: 40px;
 }
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
+}
+.progress-bar{
+    position: absolute;
+    background: #959595;
+    width: 325px;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress-bar div span.c1{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    float: right;
+    margin-top: -13px;
+    color: #fff;
+    margin-right: -20px;
+    background: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ux{
+    background-color: #ff4d05;
+    animation: ux 1s linear forwards;
+}
+.dev{
+    background-color: #95bd0d;
+    animation: dev 1s linear forwards;
+}
+.graphics{
+    background-color: #9327b0;
+    animation: graphics 1s linear forwards;
+}
+.ux span.c1{
+    border: 1px solid #ff4d05;
+}
+.dev span.c1{
+    border: 1px solid #95bd0d;
+}
+.graphics span.c1{
+    border: 1px solid #9327b0;
+}
+@keyframes ux{
+    100%{
+        width: 86%;
+    }
+}
+@keyframes dev{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes graphics{
+    100%{
+        width: 70%;
+    }
 }
 
 /* Services design */
