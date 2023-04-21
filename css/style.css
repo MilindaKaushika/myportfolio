@@ -14,8 +14,8 @@
     --text-color:#fff;
     --second-color:#ccc;
     --main-color:#ff4d05;
-    --big-font: 3rem;
-    --h2-font: 2rem;
+    --big-font: 4rem;
+    --h2-font: 3rem;
     --p-font: 1.1rem;
 }
 body{
@@ -485,7 +485,7 @@ section{
     cursor: pointer;
 }
 .list p{
-    margin-top: 25px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -494,7 +494,118 @@ section{
     margin-right: 15px;
     font-size: 25px;
 }
+.contact-icons i{
+    font-size: 30px;
+    color: var(--main-color); 
+    margin-right: 5px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover{
+    transform: scale(1.1);
+    color: var(--text-color);
+}
 #msg{
     color: white;
     font-size: 14px;
+}
+
+/* End design */
+.end{
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color); 
+}
+.last-test{
+    color: var(--second-color);
+    font-size: 14px;
+}
+.top i{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+/* Responsive page */
+@media (max-width: 1480px){
+    :root{
+        --big-font: 3rem;
+        --h2-font: 2rem;
+        --p-font: 1rem;
+        transition: .1s;
+    }
+    .box h3 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 1120px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding: 10px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .end{
+        padding: 15px 3%;
+    } 
+}
+@media (max-width: 830px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .last-test {
+        text-align: center;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        color: var(--text-color);
+        transition: all .45s ease;
+    }
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+    .navlist a.active{
+        color: var(--text-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
 }
