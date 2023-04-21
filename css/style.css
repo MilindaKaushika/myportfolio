@@ -143,6 +143,7 @@ section{
     font-size: 16px;
     font-weight: 600;
     border-radius: 8px;
+    margin-right: 25px;
     transition: all 0.6s;
 }
 .btn:hover{
@@ -150,7 +151,32 @@ section{
     background: transparent;
     color: var(--main-color);
 }
-
+.main-but{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-but i{
+    width: 38px;
+    height: 38px;
+    background:var(--main-color);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    padding: 10px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.main-but i:hover{
+    background-color: #fff;
+    border: none;  
+    outline: none;
+    color: #000000;
+    transform: scale(1.01) translateY(-4px);
+}
 /* About design */
 .about{
     display: grid;
@@ -409,4 +435,66 @@ section{
 }
 .lang:hover i{
     transform: scale(1.1);
+}
+
+/* Contact details */
+.contact{
+    background-color: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+.contact-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.contact-text h4{
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.list p{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.list p i{
+    color: var(--main-color);
+    margin-right: 15px;
+    font-size: 25px;
+}
+#msg{
+    color: white;
+    font-size: 14px;
 }
