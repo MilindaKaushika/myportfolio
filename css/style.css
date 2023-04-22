@@ -557,6 +557,7 @@ section{
     }
     .end{
         padding: 15px 3%;
+        flex-wrap: revert;
     } 
 }
 @media (max-width: 830px){
@@ -607,5 +608,34 @@ section{
     }
     .navlist.open{
         top: 100%;
+    }
+}
+@media (max-width: 600px){
+    .home {
+        height: fit-content;
+    }
+    .main-but {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .btn {
+        margin-bottom: 15px;
+    }
+    .tab-link {
+        margin-right: 35px;
+    }
+    .progress-bar {
+        width: 278px;
+    }
+    .abot-text p {
+        font-size: 15px;
+    }
+    .abot-text h4{
+        font-size: 20px;
+    }
+    .navlist a {
+        margin: 15px;
+        font-size: 15px;
+        transition:.5s;
     }
 }
