@@ -239,7 +239,7 @@ section{
     color:var(--second-color);
 }
 .tab-contents ul li span{
-   color:var(--main-color);
+   color: var(--main-color); 
    font-size: 15px;
    position: relative;
 }
@@ -252,13 +252,15 @@ section{
 }
 .tab-contents.active-tab{
     display: block;
+    overflow-x: auto;
+    height: 215px;
 }
 .progress-bar{
-    position: absolute;
+    /* position: absolute; */
     background: #959595;
-    width: 325px;
+    width: 100%;
     height: 10px;
-    margin-top: 10px;
+    margin-top: 18px;
     border-radius: 5px;
 }
 .progress-bar div{
@@ -280,6 +282,13 @@ section{
     align-items: center;
     justify-content: center;
 }
+.skills h2{
+    font-size: 15px;
+    font-weight: 400;
+    color:var(--second-color); 
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
 .ux{
     background-color: #ff4d05;
     animation: ux 1s linear forwards;
@@ -292,6 +301,22 @@ section{
     background-color: #9327b0;
     animation: graphics 1s linear forwards;
 }
+.html{
+    background-color: #ff4d05;
+    animation: html 1s linear forwards;
+}
+.react{
+    background-color: #ff4d05;
+    animation: react 1s linear forwards;
+}
+.angular{
+    background-color: #ff4d05;
+    animation: angular 1s linear forwards;
+}
+.figma{
+    background-color: #ff4d05;
+    animation: figma 1s linear forwards;
+}
 .ux span.c1{
     border: 1px solid #ff4d05;
 }
@@ -300,6 +325,18 @@ section{
 }
 .graphics span.c1{
     border: 1px solid #9327b0;
+}
+.html span.c1{
+    border: 1px solid #ff4d05;
+}
+.react span.c1{
+    border: 1px solid #ff4d05;
+}
+.angular span.c1{
+    border: 1px solid #ff4d05;
+}
+.figma span.c1{
+    border: 1px solid #ff4d05;
 }
 @keyframes ux{
     100%{
@@ -314,6 +351,26 @@ section{
 @keyframes graphics{
     100%{
         width: 70%;
+    }
+}
+@keyframes html{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes react{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes angular{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes figma{
+    100%{
+        width: 80%;
     }
 }
 
