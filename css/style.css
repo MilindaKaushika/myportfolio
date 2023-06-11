@@ -401,6 +401,7 @@ section{
     background: var(--bg-color);
     padding: 40px;
     text-align: center;
+    height: 415px;
     border-radius: 8px;
     transition: all 0.5s ease;
 }
@@ -685,6 +686,9 @@ section{
     }
     .navlist.open{
         top: 100%;
+    }
+    .box{
+        height: auto;
     }
 }
 @media (max-width: 600px){
